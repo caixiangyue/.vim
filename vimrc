@@ -17,6 +17,7 @@ set ruler
 set showmatch
 set matchtime=1
 set history=50
+set ignorecase
 set hlsearch 
 set showcmd
 set nobackup
@@ -29,38 +30,38 @@ filetype plugin on
 filetype plugin indent on
 
 autocmd FileType c setlocal shiftwidth=4 tabstop=4
+autocmd FileType cpp setlocal shiftwidth=4 tabstop=4
+autocmd FileType cc setlocal shiftwidth=4 tabstop=4
+autocmd FileType go setlocal shiftwidth=4 tabstop=4
 
+"gruvbox
 colorscheme gruvbox
-let g:lightline = {
-      \ 'colorscheme': 'one',
-      \ }
 
+"nerdtree
 map <C-d> :NERDTreeToggle<CR>
 
-let g:ycm_global_ycm_extra_conf = '/Users/cxy/.vim/pack/plugins/start/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
-let g:ycm_collect_identifiers_from_tags_files=1 
-let g:ycm_min_num_of_chars_for_completion=2 
-let g:ycm_cache_omnifunc=0 
-let g:ycm_seed_identifiers_with_syntax=1
-let g:ycm_complete_in_comments = 1
-let g:ycm_complete_in_strings = 1
-let g:ycm_collect_identifiers_from_comments_and_strings = 0
-let g:ycm_seed_identifiers_with_syntax = 1
-let g:ycm_key_invoke_completion = '<c-h>'
-set completeopt-=preview
-let g:ycm_add_preview_to_completeopt = 0
-let g:ycm_semantic_triggers =  {
-			\ 'c,cpp,python,java,go': ['re!\w{2}'],
-			\ 'cs,lua,javascript': ['re!\w{2}'],
-			\ }
-let g:ycm_show_diagnostics_ui = 0
-let g:ycm_filetype_whitelist = {
-			\ "c":1,
-			\ "cpp":1,
-			\ "cc":1,
-			\ "sh":1,
-			\ "zsh":1,
-			\ }
+"lightline
 let g:lightline = {
       \ 'colorscheme': 'one',
       \ }
+
+"rainbow
+let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
+
+"vim-go
+let g:go_fmt_command = "goimports"
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
+let g:go_autodetect_gopath = 1
+let g:go_list_type = "quickfix"
+let g:go_version_warning = 1
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_generate_tags = 1
+let g:godef_split=2
+imap <F6> <C-x><C-o>
