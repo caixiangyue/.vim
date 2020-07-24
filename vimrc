@@ -28,7 +28,7 @@ set laststatus=2
 filetype on
 filetype plugin on
 filetype plugin indent on
-
+let mapleader=","
 autocmd FileType c setlocal shiftwidth=4 tabstop=4
 autocmd FileType cpp setlocal shiftwidth=4 tabstop=4
 autocmd FileType cc setlocal shiftwidth=4 tabstop=4
@@ -50,6 +50,7 @@ let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowTo
 
 "vim-go
 let g:go_fmt_command = "goimports"
+let g:go_addtags_transform = "camelcase"
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
 let g:go_autodetect_gopath = 1
@@ -65,3 +66,10 @@ let g:go_highlight_methods = 1
 let g:go_highlight_generate_tags = 1
 let g:godef_split=2
 imap <F6> <C-x><C-o>
+
+"ctrp
+nnoremap <leader>p  :CtrlP<CR>
+nnoremap <leader>b  :CtrlPBuffer<CR>
+let g:ctrlp_match_window = 'bottom,order:ttb'
+let g:ctrlp_switch_buffer = 0
+let g:ctrlp_working_path_mode = ''

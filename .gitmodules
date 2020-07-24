@@ -19,3 +19,6 @@
 [submodule "pack/plugins/start/vim-go"]
 	path = pack/plugins/start/vim-go
 	url = git@github.com:fatih/vim-go.git
+[submodule "pack/plugins/start/ctrlp.vim"]
+	path = pack/plugins/start/ctrlp.vim
+	url = git@github.com:kien/ctrlp.vim.git
