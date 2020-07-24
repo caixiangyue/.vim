@@ -38,7 +38,7 @@ autocmd FileType go setlocal shiftwidth=4 tabstop=4
 colorscheme gruvbox
 
 "nerdtree
-map <C-d> :NERDTreeToggle<CR>
+map <leader>d :NERDTreeToggle<CR>
 
 "lightline
 let g:lightline = {
