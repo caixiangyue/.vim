@@ -22,3 +22,6 @@
 [submodule "pack/plugins/start/ctrlp.vim"]
 	path = pack/plugins/start/ctrlp.vim
 	url = git@github.com:kien/ctrlp.vim.git
+[submodule "pack/plugins/start/clang_complete"]
+	path = pack/plugins/start/clang_complete
+	url = git@github.com:xavierd/clang_complete.git

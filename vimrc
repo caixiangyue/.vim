@@ -74,3 +74,7 @@ nnoremap <leader>b  :CtrlPBuffer<CR>
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = ''
+
+"clang-complete
+ let g:clang_library_path='/usr/lib/llvm-6.0/lib'
+
