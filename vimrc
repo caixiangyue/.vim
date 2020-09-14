@@ -28,11 +28,12 @@ set laststatus=2
 filetype on
 filetype plugin on
 filetype plugin indent on
-let mapleader=","
 autocmd FileType c setlocal shiftwidth=4 tabstop=4
 autocmd FileType cpp setlocal shiftwidth=4 tabstop=4
 autocmd FileType cc setlocal shiftwidth=4 tabstop=4
 autocmd FileType go setlocal shiftwidth=4 tabstop=4
+
+let mapleader=" "
 
 "gruvbox
 colorscheme gruvbox
@@ -65,7 +66,7 @@ let g:go_highlight_extra_types = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_generate_tags = 1
 let g:godef_split=2
-imap <F6> <C-x><C-o>
+imap <leader>h <C-x><C-o>
 
 "ctrp
 nnoremap <leader>p  :CtrlP<CR>
