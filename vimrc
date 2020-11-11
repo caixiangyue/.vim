@@ -25,6 +25,7 @@ set magic
 set nocompatible
 set confirm
 set laststatus=2
+set completeopt-=preview
 filetype on
 filetype plugin on
 filetype plugin indent on
@@ -66,6 +67,7 @@ let g:go_highlight_extra_types = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_generate_tags = 1
 let g:godef_split=2
+let g:go_gocode_propose_source=0
 imap <leader>h <C-x><C-o>
 
 "ctrp
@@ -76,5 +78,4 @@ let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = ''
 
 "clang-complete
- let g:clang_library_path='/usr/lib/llvm-6.0/lib'
-
+let g:clang_library_path='/usr/lib/llvm-6.0/lib'
