@@ -52,36 +52,7 @@ let g:lightline = {
 "rainbow
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 
-"vim-go
-let g:go_fmt_command = "goimports"
-let g:go_fmt_autosave = 1
-let g:go_addtags_transform = "camelcase"
-let g:go_def_mode='gopls'
-let g:go_info_mode='gopls'
-let g:go_auto_type_info = 1
-let g:go_autodetect_gopath = 1
-let g:go_list_type = "quickfix"
-let g:go_version_warning = 1
-let g:go_highlight_types = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_functions = 1
-let g:go_highlight_function_calls = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_extra_types = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_generate_tags = 1
-let g:godef_split=2
-
-imap <leader>h <C-x><C-o>
-
 "ctrp
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = ''
-
-"clang-complete
-let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
-let g:clang_user_options='|| exit 0'
-let g:clang_complete_auto = 1
-let g:clang_complete_copen = 1
-let g:clang_debug = 1
