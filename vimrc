@@ -56,3 +56,6 @@ let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowTo
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = ''
+
+"ycm
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
